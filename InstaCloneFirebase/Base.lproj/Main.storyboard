@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umY-PF-je2">
-                                <rect key="frame" x="104" y="409" width="84" height="35"/>
+                                <rect key="frame" x="104" y="409" width="84" height="34.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="84" id="gib-MM-aua"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-8j-KYd">
-                                <rect key="frame" x="204" y="409" width="84" height="35"/>
+                                <rect key="frame" x="204" y="408.33333333333331" width="84" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
                                 <connections>
@@ -77,6 +77,7 @@
                             <constraint firstItem="umY-PF-je2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p5q-jJ-BaU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cSU-vk-yc5"/>
                     <connections>
                         <outlet property="emailText" destination="b5f-HG-fHM" id="hW6-hY-t9Y"/>
                         <outlet property="passwordText" destination="4aL-KN-euD" id="LHC-Il-9Lm"/>
@@ -90,7 +91,7 @@
         <!--Upload-->
         <scene sceneID="hyi-1E-Qu2">
             <objects>
-                <viewController id="rLd-NJ-80R" sceneMemberID="viewController">
+                <viewController id="rLd-NJ-80R" customClass="UploadViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEY-uz-DWu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,12 +102,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3B7-uy-IyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="107"/>
+            <point key="canvasLocation" x="700" y="-196"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="ha7-dH-r40">
+            <objects>
+                <viewController id="GWh-RZ-bsL" customClass="SettingsViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Xl-Vl-Ia4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rs-ZN-gTr">
+                                <rect key="frame" x="155" y="409" width="82" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log out"/>
+                                <connections>
+                                    <action selector="logOutClicked:" destination="GWh-RZ-bsL" eventType="touchUpInside" id="g7i-rk-i5R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0da-Ff-h8I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0rs-ZN-gTr" firstAttribute="centerX" secondItem="5Xl-Vl-Ia4" secondAttribute="centerX" id="3dZ-fh-gSv"/>
+                            <constraint firstItem="0rs-ZN-gTr" firstAttribute="leading" secondItem="0da-Ff-h8I" secondAttribute="leading" constant="155" id="Bay-Zm-rOq"/>
+                            <constraint firstItem="0rs-ZN-gTr" firstAttribute="centerY" secondItem="5Xl-Vl-Ia4" secondAttribute="centerY" id="Ozf-qP-M7l"/>
+                            <constraint firstItem="0rs-ZN-gTr" firstAttribute="top" secondItem="0da-Ff-h8I" secondAttribute="top" constant="350" id="iyX-Lr-THx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.2.fill" catalog="system" id="gla-kN-agk"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewControllerVC" modalPresentationStyle="fullScreen" id="F0F-5o-vxt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCn-Fi-qzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="561"/>
         </scene>
         <!--Feed-->
         <scene sceneID="zRp-gp-8rB">
             <objects>
-                <viewController id="qmU-hN-6PG" sceneMemberID="viewController">
+                <viewController id="qmU-hN-6PG" customClass="FeedViewController" customModule="InstaCloneFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uul-hY-DIO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fXu-Yg-lVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="610" y="-611"/>
+            <point key="canvasLocation" x="700" y="-876"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bAZ-DA-Hfa">
@@ -132,14 +168,16 @@
                     <connections>
                         <segue destination="qmU-hN-6PG" kind="relationship" relationship="viewControllers" id="ZBI-pJ-VZV"/>
                         <segue destination="rLd-NJ-80R" kind="relationship" relationship="viewControllers" id="Dg8-6R-kzJ"/>
+                        <segue destination="GWh-RZ-bsL" kind="relationship" relationship="viewControllers" id="gFa-J1-jVW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wT-Pf-QZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242" y="-297"/>
+            <point key="canvasLocation" x="-89" y="-249"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="101"/>
         <image name="note.text" catalog="system" width="128" height="107"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">

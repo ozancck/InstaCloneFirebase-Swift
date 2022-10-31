@@ -14,6 +14,9 @@
 		3135FAB8290ED707000F1706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3135FAB6290ED707000F1706 /* Main.storyboard */; };
 		3135FABA290ED709000F1706 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3135FAB9290ED709000F1706 /* Assets.xcassets */; };
 		3135FABD290ED709000F1706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3135FABB290ED709000F1706 /* LaunchScreen.storyboard */; };
+		319E04C2290F9DFC004C4B1A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E04C1290F9DFC004C4B1A /* FeedViewController.swift */; };
+		319E04C4290F9E0A004C4B1A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E04C3290F9E0A004C4B1A /* SettingsViewController.swift */; };
+		319E04C6290F9E15004C4B1A /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E04C5290F9E15004C4B1A /* UploadViewController.swift */; };
 		6C3489675BD18660FF6C597C /* Pods_InstaCloneFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D15491EC987B50F4F46C5E /* Pods_InstaCloneFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		3135FAB9290ED709000F1706 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3135FABC290ED709000F1706 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3135FABE290ED709000F1706 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319E04C1290F9DFC004C4B1A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		319E04C3290F9E0A004C4B1A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		319E04C5290F9E15004C4B1A /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		7B5107F41EBA4033237F09A9 /* Pods-InstaCloneFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneFirebase.release.xcconfig"; path = "Target Support Files/Pods-InstaCloneFirebase/Pods-InstaCloneFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		A5A90AD0970337E1A30C14B6 /* Pods-InstaCloneFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneFirebase.debug.xcconfig"; path = "Target Support Files/Pods-InstaCloneFirebase/Pods-InstaCloneFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		D2D15491EC987B50F4F46C5E /* Pods_InstaCloneFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCloneFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,9 @@
 				3135FABB290ED709000F1706 /* LaunchScreen.storyboard */,
 				3135FABE290ED709000F1706 /* Info.plist */,
 				312BD8C6290EDA14003AAE1A /* GoogleService-Info.plist */,
+				319E04C1290F9DFC004C4B1A /* FeedViewController.swift */,
+				319E04C3290F9E0A004C4B1A /* SettingsViewController.swift */,
+				319E04C5290F9E15004C4B1A /* UploadViewController.swift */,
 			);
 			path = InstaCloneFirebase;
 			sourceTree = "<group>";
@@ -91,7 +100,6 @@
 				A5A90AD0970337E1A30C14B6 /* Pods-InstaCloneFirebase.debug.xcconfig */,
 				7B5107F41EBA4033237F09A9 /* Pods-InstaCloneFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,7 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3135FAB5290ED707000F1706 /* ViewController.swift in Sources */,
+				319E04C6290F9E15004C4B1A /* UploadViewController.swift in Sources */,
 				3135FAB1290ED707000F1706 /* AppDelegate.swift in Sources */,
+				319E04C2290F9DFC004C4B1A /* FeedViewController.swift in Sources */,
+				319E04C4290F9E0A004C4B1A /* SettingsViewController.swift in Sources */,
 				3135FAB3290ED707000F1706 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
