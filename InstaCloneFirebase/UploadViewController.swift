@@ -25,6 +25,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         imageView.addGestureRecognizer(gestureRecognizer)
     }
     
+    func makeAlert(titleInput: String, messageInput: String){
+        let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
+    
     
     @objc func chooseImage(){
         
@@ -51,11 +58,13 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         if let data = imageView.image?.jpegData(compressionQuality: 0.5){
             
-            let imageReferance = mediaFolder.child("image.jpg")
+            let uuid = "\(UUID().uuidString).jpg"
+            
+            let imageReferance = mediaFolder.child(uuid)
             
             imageReferance.putData(data) { metaData, error in
                 if error != nil {
-                    print(error?.localizedDescription)
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "error")
                 }else{
                     imageReferance.downloadURL { url, error in
                         if error == nil {
@@ -69,6 +78,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
             
         
         }
+        
         
     }
     
