@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312B7D1A2915542F00F18686 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B7D192915542F00F18686 /* FeedCell.swift */; };
 		312BD8C7290EDA14003AAE1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 312BD8C6290EDA14003AAE1A /* GoogleService-Info.plist */; };
 		3135FAB1290ED707000F1706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135FAB0290ED707000F1706 /* AppDelegate.swift */; };
 		3135FAB3290ED707000F1706 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135FAB2290ED707000F1706 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		312B7D192915542F00F18686 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		312BD8C6290EDA14003AAE1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3135FAAD290ED707000F1706 /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3135FAB0290ED707000F1706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				319E04C1290F9DFC004C4B1A /* FeedViewController.swift */,
 				319E04C3290F9E0A004C4B1A /* SettingsViewController.swift */,
 				319E04C5290F9E15004C4B1A /* UploadViewController.swift */,
+				312B7D192915542F00F18686 /* FeedCell.swift */,
 			);
 			path = InstaCloneFirebase;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312B7D1A2915542F00F18686 /* FeedCell.swift in Sources */,
 				3135FAB5290ED707000F1706 /* ViewController.swift in Sources */,
 				319E04C6290F9E15004C4B1A /* UploadViewController.swift in Sources */,
 				3135FAB1290ED707000F1706 /* AppDelegate.swift in Sources */,
